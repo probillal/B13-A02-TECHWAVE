@@ -17,9 +17,10 @@
   </head>
   <body>
     <header>
+      <!-- Navbar section -->
       <section class="bg-[#1A0B2E]">
         <nav
-          class="max-w-7xl flex justify-between mx-auto items-center p-9 text-white"
+          class="max-w-6xl flex justify-between mx-auto items-center p-9 text-white"
         >
           <div class="logo">
             <h2 class="text-4xl">
@@ -29,16 +30,25 @@
               >
             </h2>
           </div>
-          <ul class="flex gap-8 font-medium">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Episodes</a></li>
-            <li><a href="#">Host</a></li>
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li>
+              <a class="hover:underline decoration-[#FB09B4]" href="#">About</a>
+            </li>
+            <li>
+              <a class="hover:underline decoration-[#FB09B4]" href="#"
+                >Episodes</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline decoration-[#FB09B4]" href="#">Host</a>
+            </li>
           </ul>
           <button
-            class="bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] py-3 pl-3 pr-10 rounded-4xl font-semibold"
+            class="hidden lg:block bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] py-3 px-4 rounded-4xl font-semibold hover:bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F]"
           >
             Subscribe <i class="fa-solid fa-arrow-right-long"></i>
           </button>
+          <div class="lg:hidden"><i class="fa-solid fa-bars"></i></div>
         </nav>
       </section>
     </header>
