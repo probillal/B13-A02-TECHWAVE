@@ -20,31 +20,46 @@
       <!-- Navbar section -->
       <section class="bg-[#1A0B2E]">
         <nav
-          class="max-w-6xl flex justify-between mx-auto items-center p-9 text-white"
+          class="max-w-7xl flex justify-between mx-auto items-center p-9 text-white"
         >
+          <!-- logo -->
           <div class="logo">
-            <h2 class="text-4xl">
-              Tech<span
-                class="bg-gradient-to-b from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent"
-                >Wave</span
-              >
-            </h2>
+            <a href="#">
+              <h2 class="text-4xl">
+                Tech<span
+                  class="bg-gradient-to-b from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent"
+                  >Wave</span
+                >
+              </h2>
+            </a>
           </div>
+          <!-- menu -->
           <ul class="hidden md:block md:flex lg:flex gap-8 font-medium">
             <li>
-              <a class="hover:underline decoration-[#FB09B4]" href="#">About</a>
+              <a
+                class="hover:underline decoration-[#FB09B4] decoration-2"
+                href="#"
+                >About</a
+              >
             </li>
             <li>
-              <a class="hover:underline decoration-[#FB09B4]" href="#"
+              <a
+                class="hover:underline decoration-[#FB09B4] decoration-2"
+                href="#"
                 >Episodes</a
               >
             </li>
             <li>
-              <a class="hover:underline decoration-[#FB09B4]" href="#">Host</a>
+              <a
+                class="hover:underline decoration-[#FB09B4] decoration-2"
+                href="#"
+                >Host</a
+              >
             </li>
           </ul>
+          <!-- btn -->
           <button
-            class="hidden lg:block md:block bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] py-3 px-4 rounded-4xl font-semibold hover:bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F]"
+            class="hidden lg:block md:block bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] cursor-pointer py-3 px-4 rounded-4xl font-semibold hover:bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F]"
           >
             Subscribe <i class="fa-solid fa-arrow-right-long"></i>
           </button>
@@ -52,6 +67,45 @@
             <i class="fa-solid fa-bars"></i>
           </div>
         </nav>
+      </section>
+      <!-- banner section -->
+      <section>
+        <!-- banner background -->
+        <div class="h-screen bg-[url(./assets/hero-bg.png)] bg-center bg-cover">
+          <!-- circle background -->
+          <div
+            class="absolute flex inset-0 pointer-events-none justify-center items-center"
+          >
+            <div
+              class="relative w-[380px] h-[380px] bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain flex justify-center items-center"
+            >
+              <img src="./assets/microphone.png" alt="" />
+              <!-- banner content -->
+              <div class="absolute -bottom-52 text-center pointer-events-none">
+                <h2 class="text-6xl font-extrabold text-white mb-2">
+                  TechWave
+                </h2>
+                <p class="text-white mb-6">
+                  Your daily dose of tech insights, productivity hacks, and
+                  personal growth
+                </p>
+                <!-- banner btn -->
+                <div class="flex gap-2">
+                  <button
+                    class="bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] py-3 px-4 rounded-3xl font-semibold flex gap-2 items-center hover:bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F]"
+                  >
+                    <img src="./assets/spotify.png" alt="" /> Listen on Spotify
+                  </button>
+                  <button
+                    class="border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-100 flex gap-2 items-center rounded-3xl px-4 py-3"
+                  >
+                    <img src="./assets/message.png" alt="" /> Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </header>
     <main></main>
