@@ -13,6 +13,7 @@
     />
     <!-- Tailwindcss CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Tech_wave_assignment2</title>
   </head>
   <body>
@@ -69,18 +70,28 @@
         </nav>
       </section>
       <!-- banner section -->
-      <section>
-        <!-- banner background -->
+      <div class="banner">
+        <div class="circle">
+          <div class="absolute top-10 right-10 animate-pulse">
+            <h4
+              class="bg-[#00FF88] w-[75px] h-[38px] rounded-full text-center p-2 text=[18px] font-semibold text-[#1A0B2E]"
+            >
+              NEW
+            </h4>
+          </div>
+          <img src="./assets/microphone.png" alt="" />
+        </div>
+      </div>
+      <!-- banner section -->
+      <!-- <section>
         <div class="h-screen bg-[url(./assets/hero-bg.png)] bg-center bg-cover">
-          <!-- circle background -->
           <div
             class="flex inset-0 pointer-events-none justify-center items-center"
           >
             <div
               class="relative w-[280px] h-[280px] bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain flex justify-center items-center"
             >
-              <!-- challenge part -->
-              <div class="absolute top-2 right-2">
+              <div class="absolute top-2 right-2 animate-pulse">
                 <h4
                   class="bg-[#00FF88] w-[75px] h-[38px] rounded-full text-center p-2 text=[18px] font-semibold text-[#1A0B2E]"
                 >
@@ -89,7 +100,7 @@
               </div>
               <img src="./assets/microphone.png" alt="" />
             </div>
-            <!-- banner content -->
+
             <div class="absolute -bottom-10 text-center pointer-events-none">
               <h2 class="text-6xl font-extrabold text-white mb-2">TechWave</h2>
               <p class="text-white mb-6">
@@ -97,7 +108,6 @@
                 personal growth
               </p>
 
-              <!-- banner btn -->
               <div class="flex gap-2 justify-center items-center">
                 <button
                   class="bg-gradient-to-l from-[#9100F8] via-[#FB09B4] to-[#F7E93F] py-3 px-4 rounded-3xl font-semibold flex gap-2 items-center text-white"
@@ -113,7 +123,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </header>
     <!-- main section -->
     <main>
